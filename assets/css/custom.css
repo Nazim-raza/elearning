@@ -1,0 +1,233 @@
+/* Remove background and border */
+.accordion-button {
+  background-color: rgba(213, 244, 233, 0.926)!important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove hover effect */
+.accordion-button:not(.collapsed) {
+  color: inherit !important;
+  background-color: rgba(213, 244, 233, 0.926)!important;
+  box-shadow: none !important;
+}
+
+/* Remove default focus outline */
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+/* Optional: Customize text color or alignment */
+.accordion-button {
+  color: #000; /* Customize text color */
+  text-align: left; /* Align text to the left */
+}
+
+/* Remove default padding */
+.accordion-header {
+  padding: 0 !important;
+}
+
+
+
+.bgfull{
+  background-color: rgba(213, 244, 233, 0.926)!important;
+  padding: 2rem;
+}
+
+.bglp{
+background-color: #ffffff;
+
+}
+
+/* Custom style for the accordion item */
+.accordion-item {
+  border: none; /* Remove border */
+  padding-left: 20px;
+  background-color: rgba(213, 244, 233, 0.926)!important;
+}
+
+.accordion-body{
+  background-color: rgba(213, 244, 233, 0.926)!important;
+
+}
+.accordion-item:last-of-type{
+  border-bottom-right-radius: 0; 
+  border-bottom-left-radius: 0;
+}
+
+.accordion-item:first-of-type{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+/* Ensure the preview button is visible by default */
+.preview-button {
+  display: inline-block;
+  
+}
+
+/* Hide the preview button when the accordion is open */
+.accordion-button:not(.collapsed) .preview-button {
+  display: none;
+}
+
+.accordion-button{
+    background-color: #ffffff;
+    border-radius: 0;
+}
+
+.accordion-button:hover{
+    background-color: #ffffff !important;
+
+}
+
+.accordion-body{
+    background-color: #ffffff;
+
+}
+
+.preview-icon {
+    font-size: 1.5rem;
+    color: #007bff; /* Adjust color as needed */
+    cursor: pointer;
+  }
+
+  /* Preview button styling */
+.preview-button {
+    display: inline-flex;
+    align-items: center;
+    color: #007bff; /* Blue color */
+    font-size: 1rem; /* Match the font size */
+    text-decoration: none;
+    font-weight: 500;
+    position: absolute;
+    right: 3rem;
+  }
+  
+  .preview-button i {
+    font-size: 1.2rem; /* Slightly larger play icon */
+    margin-right: 5px; /* Space between the icon and text */
+    color: #007bff;
+  }
+  
+  /* Hover effect */
+  .preview-button:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #d8e2f2; /* Same color as the line */
+    border-radius: 50%;
+    position: absolute;
+    left: -6px; /* Adjust to align with the line */
+    margin-top: 8px; /* Center the bullet vertically with the text */
+  }
+  
+
+  .imgCont{
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .clients-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .clients-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .client-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .clients-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+    }
+  }
+  
+  .collapsed a{
+    display: block;
+  }
+
+  .timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #94979b; /* Light blue vertical line */
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #7b7f86; /* Same color as the line */
+    border-radius: 50%;
+    position: absolute;
+    left: -6px; /* Adjust to align with the line */
+    margin-top: 8px; /* Center the bullet vertically with the text */
+  }
+
+
+  /* Align bullet with text */
+.accordion-header {
+  display: flex;
+  align-items: center; /* Align bullet and text vertically */
+  padding: 0; /* Remove extra padding */
+}
+
+
+
+/* Align the button text */
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  margin: 0;
+  background-color: transparent !important; /* Remove background */
+  border: none; /* Remove border */
+}
+
+/* Remove unwanted padding for the accordion item */
+.accordion-item {
+  padding-left: 20px; /* Adjust padding for timeline */
+}
+
+/* Default styles */
+.preview-button .preview-text {
+  display: inline;
+}
+
+/* Hide text below 768px */
+@media (max-width: 768px) {
+  .preview-button .preview-text {
+    display: none;
+  }
+}
