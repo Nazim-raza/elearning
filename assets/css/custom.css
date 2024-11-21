@@ -1,9 +1,12 @@
+.ftbg{
+  background-color: white;
+}
 /* Remove background and border */
 .accordion-button {
   background-color: rgba(213, 244, 233, 0.926)!important;
   border: none !important;
   box-shadow: none !important;
-}
+} 
 
 /* Remove hover effect */
 .accordion-button:not(.collapsed) {
@@ -61,6 +64,9 @@ background-color: #ffffff;
   border-top-right-radius: 0;
 }
 
+#faq .accordion-item, .accordion-body, .accordion-button{
+  background-color: white !important;
+}
 
 /* Ensure the preview button is visible by default */
 .preview-button {
@@ -230,4 +236,5 @@ background-color: #ffffff;
   .preview-button .preview-text {
     display: none;
   }
+  
 }
